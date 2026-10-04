@@ -50,7 +50,7 @@ Live Website:
 https://iqraiqbal555.github.io/job-portal-mini-project-3/
 
 GitHub Repository:
-
+https://github.com/IqraIqbal555/job-portal-mini-project-3.git
 ---
 
 ✨ Features
