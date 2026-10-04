@@ -47,7 +47,7 @@ Technologies Used
 🌐 Live Demo
 
 Live Website:
-
+https://iqraiqbal555.github.io/job-portal-mini-project-3/
 
 GitHub Repository:
 
