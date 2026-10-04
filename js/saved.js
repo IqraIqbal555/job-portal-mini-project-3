@@ -1,0 +1,4 @@
+import {jobs} from "./data.js";import {getSavedIds} from "./storage.js";import {initShell,jobCard,bindJobActions,bindModals,toast,getJob,renderJobDetails,openModal,openApplication} from "./app.js";
+initShell();bindJobActions();bindModals();const grid=document.getElementById("savedGrid"),empty=document.getElementById("savedEmpty");
+function render(){const saved=getSavedIds();const list=jobs.filter(j=>saved.includes(j.id));grid.innerHTML=list.map(jobCard).join("");grid.classList.toggle("hidden",!list.length);empty.classList.toggle("hidden",!!list.length)}
+document.addEventListener("click",e=>{const d=e.target.closest("[data-details]"),a=e.target.closest("[data-apply]");if(d){const job=getJob(d.dataset.details);renderJobDetails(job,document.getElementById("jobDetails"),openApplication);openModal("jobModal")}if(a)openApplication(getJob(a.dataset.apply));if(e.target.closest("[data-save]"))setTimeout(render,50)});render();
