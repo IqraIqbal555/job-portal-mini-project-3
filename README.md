@@ -49,7 +49,7 @@ Technologies Used
 Live Website:
 https://iqraiqbal555.github.io/job-portal-mini-project-3/
 
-GitHub Repository:
+GitHub repository:
 https://github.com/IqraIqbal555/job-portal-mini-project-3.git
 ---
 
@@ -333,23 +333,23 @@ Desktop| 1024px+
 
 🖥️ Desktop Homepage
 
-(screenshots/desktop-homepage.png)
+![Desktop Homepage](screenshots/desktop-homepage.png)
 
 💼 Desktop Jobs Page
 
-(screenshots/desktop-jobs.png)
+![Desktop Jobs Page](screenshots/desktop-jobs.png)
 
 📱 Mobile Homepage
 
-(screenshots/mobile-homepage.png)
+![Mobile Homepage](screenshots/mobile-homepage.png)
 
 📱 Mobile Jobs Page
 
-(screenshots/mobile-jobs.png)
+![Mobile Jobs Page](screenshots/mobile-jobs.png)
 
 📊 Application Dashboard
 
-(screenshots/application-dashboard.png)
+![Application Dashboard](screenshots/application-dashboard.png)
 
 ---
 
