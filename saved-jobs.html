@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saved Jobs | CareerNest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body><div id="toastRegion" class="toast-region" aria-live="polite"></div>
+<header class="site-header"><nav class="navbar container" aria-label="Primary navigation"><a class="brand" href="index.html"><span class="brand-mark">CN</span><span>Career<span class="brand-accent">Nest</span></span></a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="jobs.html">Jobs</a><a class="active" href="saved-jobs.html">Saved <span class="nav-count" id="savedCount">0</span></a><a href="applications.html">Applications <span class="nav-count" id="applicationCount">0</span></a><a href="contact.html">Contact</a><button class="theme-toggle" id="themeToggle" type="button">☾</button></div></nav></header>
+<main><section class="page-hero"><div class="container"><span class="eyebrow">Your shortlist</span><h1>Saved jobs.</h1><p>Keep promising opportunities close while you decide what comes next.</p></div></section><section class="section container"><div class="section-heading split-heading"><div><span class="eyebrow">Local storage</span><h2>Your saved opportunities</h2></div><a class="btn btn-outline" href="jobs.html">Browse more jobs</a></div><div id="savedGrid" class="job-grid"></div><div id="savedEmpty" class="empty-state hidden"><div class="empty-illustration">♡</div><h2>No saved jobs yet</h2><p>Save jobs from the Jobs page and they will appear here.</p><a class="btn btn-primary" href="jobs.html">Explore Jobs</a></div></section></main>
+<footer class="site-footer"><div class="container footer-bottom"><span>© 2026 CareerNest</span><a href="contact.html">Contact us</a></div></footer>
+<div class="modal-backdrop hidden" id="jobModal" role="dialog" aria-modal="true"><div class="modal modal-large"><button class="modal-close" data-close-modal="jobModal">×</button><div id="jobDetails"></div></div></div>
+<div class="modal-backdrop hidden" id="applicationModal" role="dialog" aria-modal="true"><div class="modal"><button class="modal-close" data-close-modal="applicationModal">×</button><div id="applicationFormWrap"></div></div></div>
+<script type="module" src="js/saved.js"></script></body></html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse, search, filter and sort CareerNest job listings.">
+  <title>Jobs | CareerNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="toastRegion" class="toast-region" aria-live="polite"></div>
+<header class="site-header"><nav class="navbar container" aria-label="Primary navigation">
+<a class="brand" href="index.html"><span class="brand-mark">CN</span><span>Career<span class="brand-accent">Nest</span></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<div class="nav-links" id="navLinks"><a href="index.html">Home</a><a class="active" href="jobs.html">Jobs</a><a href="saved-jobs.html">Saved <span class="nav-count" id="savedCount">0</span></a><a href="applications.html">Applications <span class="nav-count" id="applicationCount">0</span></a><a href="contact.html">Contact</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">☾</button></div>
+</nav></header>
+<main>
+<section class="page-hero"><div class="container"><span class="eyebrow">Explore the market</span><h1>Find your next opportunity.</h1><p>Search, filter and sort roles that match the way you want to work.</p></div></section>
+<section class="jobs-layout container section">
+<aside class="filter-panel" id="filterPanel">
+<div class="filter-header"><div><span class="eyebrow">Refine</span><h2>Filters</h2></div><button id="closeFilters" class="icon-btn mobile-only" aria-label="Close filters">×</button></div>
+<div class="filter-group"><label for="categoryFilter">Category</label><select id="categoryFilter"><option value="">All categories</option><option>Technology</option><option>Design</option><option>Data</option><option>Marketing</option><option>Business</option><option>Engineering</option></select></div>
+<div class="filter-group"><label for="locationFilter">Location</label><select id="locationFilter"><option value="">All locations</option><option>Remote</option><option>Islamabad</option><option>Lahore</option><option>Karachi</option><option>Mansehra</option><option>Peshawar</option></select></div>
+<div class="filter-group"><label for="typeFilter">Job type</label><select id="typeFilter"><option value="">All types</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select></div>
+<div class="filter-group"><label for="experienceFilter">Experience</label><select id="experienceFilter"><option value="">All levels</option><option>Entry Level</option><option>1–2 Years</option><option>3–5 Years</option><option>5+ Years</option></select></div>
+<div class="filter-group"><label for="salaryFilter">Minimum salary</label><select id="salaryFilter"><option value="0">Any salary</option><option value="40000">$40k+</option><option value="60000">$60k+</option><option value="80000">$80k+</option><option value="100000">$100k+</option></select></div>
+<button class="btn btn-outline full-width" id="resetFilters" type="button">Reset filters</button>
+</aside>
+<section class="jobs-content">
+<div class="jobs-toolbar">
+<div class="toolbar-search"><span>⌕</span><input id="jobSearch" type="search" placeholder="Search title, company, skill or location" aria-label="Search jobs"></div>
+<button class="btn btn-outline filter-trigger mobile-only" id="openFilters" type="button">☷ Filters</button>
+<label class="sort-control"><span>Sort</span><select id="sortJobs"><option value="latest">Latest Posted</option><option value="oldest">Oldest Posted</option><option value="salary-desc">Highest Salary</option><option value="salary-asc">Lowest Salary</option><option value="title">Job Title</option></select></label>
+</div>
+<div class="results-bar"><p id="resultsCount">Loading jobs…</p><span class="tiny-note">Updated daily</span></div>
+<div id="loadingState" class="loading-state"><span class="spinner"></span><p>Finding matching opportunities…</p></div>
+<div id="jobGrid" class="job-grid"></div>
+<div id="emptyState" class="empty-state hidden"><div class="empty-illustration">⌕</div><h2>No jobs found</h2><p>Try changing your search or filters.</p><button class="btn btn-primary" id="emptyReset" type="button">Clear filters</button></div>
+<div id="pagination" class="pagination" aria-label="Job pagination"></div>
+</section>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">CN</span><span>Career<span class="brand-accent">Nest</span></span></a><p>A modern job discovery experience designed for focused career growth.</p></div><div><h4>Explore</h4><a href="jobs.html">Find Jobs</a><a href="saved-jobs.html">Saved Jobs</a><a href="applications.html">My Applications</a></div><div><h4>Company</h4><a href="contact.html">Contact</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></div><div><h4>Get in touch</h4><p>Mansehra, Pakistan</p><a href="mailto:iqraiqbal1166@gmail.com">iqraiqbal1166@gmail.com</a></div></div><div class="container footer-bottom"><span>© 2026 CareerNest</span><span>HTML5 · CSS3 · Vanilla JavaScript</span></div></footer>
+<div class="modal-backdrop hidden" id="jobModal" role="dialog" aria-modal="true" aria-labelledby="jobModalTitle"><div class="modal modal-large"><button class="modal-close" data-close-modal="jobModal" aria-label="Close">×</button><div id="jobDetails"></div></div></div>
+<div class="modal-backdrop hidden" id="applicationModal" role="dialog" aria-modal="true" aria-labelledby="applicationTitle"><div class="modal"><button class="modal-close" data-close-modal="applicationModal" aria-label="Close">×</button><div id="applicationFormWrap"></div></div></div>
+<script type="module" src="js/jobs.js"></script>
+</body>
+</html>

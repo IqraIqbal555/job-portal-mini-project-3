@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My Applications | CareerNest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body><div id="toastRegion" class="toast-region" aria-live="polite"></div>
+<header class="site-header"><nav class="navbar container" aria-label="Primary navigation"><a class="brand" href="index.html"><span class="brand-mark">CN</span><span>Career<span class="brand-accent">Nest</span></span></a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="jobs.html">Jobs</a><a href="saved-jobs.html">Saved <span class="nav-count" id="savedCount">0</span></a><a class="active" href="applications.html">Applications <span class="nav-count" id="applicationCount">0</span></a><a href="contact.html">Contact</a><button class="theme-toggle" id="themeToggle" type="button">☾</button></div></nav></header>
+<main><section class="page-hero"><div class="container"><span class="eyebrow">Your career activity</span><h1>My applications.</h1><p>Track every application you have submitted from one simple dashboard.</p></div></section>
+<section class="section container"><div class="dashboard-summary"><div><span>Total applications</span><strong id="totalApplications">0</strong></div><div><span>Submitted</span><strong id="submittedApplications">0</strong></div><div><span>Under review</span><strong id="reviewApplications">0</strong></div><div><span>Shortlisted</span><strong id="shortlistedApplications">0</strong></div></div>
+<div class="section-heading split-heading"><div><span class="eyebrow">Application history</span><h2>Recent applications</h2></div><button class="btn btn-outline" id="exportApplications" type="button">Export JSON</button></div>
+<div class="table-wrap"><table class="applications-table"><thead><tr><th>Job</th><th>Company</th><th>Applied Date</th><th>Status</th><th>Actions</th></tr></thead><tbody id="applicationsBody"></tbody></table></div>
+<div id="applicationsEmpty" class="empty-state hidden"><div class="empty-illustration">▣</div><h2>No applications yet</h2><p>When you apply to a job, your application will be tracked here.</p><a class="btn btn-primary" href="jobs.html">Find a Job</a></div></section></main>
+<footer class="site-footer"><div class="container footer-bottom"><span>© 2026 CareerNest</span><a href="contact.html">Contact us</a></div></footer>
+<div class="modal-backdrop hidden" id="applicationDetailsModal" role="dialog" aria-modal="true"><div class="modal"><button class="modal-close" data-close-modal="applicationDetailsModal">×</button><div id="applicationDetails"></div></div></div>
+<script type="module" src="js/applications.js"></script></body></html>
