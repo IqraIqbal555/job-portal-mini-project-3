@@ -337,7 +337,7 @@ Desktop| 1024px+
 
 💼 Desktop Jobs Page
 
-![Desktop Jobs Page](screenshots/desktop-jobs.png)
+![Desktop Jobs Page](screenshots/desktop-jobs.jpg)
 
 📱 Mobile Homepage
 
